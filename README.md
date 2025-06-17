@@ -3,7 +3,6 @@ We want to fetch one student by their ID using Spring JDBC with a RowMapper.
 
 🧱 Assumptions
 Table:
-
 sql
 Copy code
 CREATE TABLE Student (
@@ -40,3 +39,11 @@ RowMapper is used to convert ResultSet rows into Java objects.
 We used queryForObject() for fetching single object.
 All JDBC boilerplate is handled by Spring.
 
+![image](https://github.com/user-attachments/assets/fb9a2416-5ccd-4f7a-993c-05248a4453a4)
+ResultSet = raw SQL data
+
+RowMapper = bridge to convert that row
+
+Implementation of RowMapper = your logic for mapping
+
+Class Object = final output (like a Student Java object)
